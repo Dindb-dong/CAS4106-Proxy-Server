@@ -1,3 +1,4 @@
+# 2023122004 김동욱 Computer Network Proj. 3: HTTP Proxy Server
 import socket
 import sys
 import threading
@@ -7,7 +8,6 @@ REQUEST_COUNT = 0
 IMAGE_FILTER_MODE = False 
 # 락(Lock) 추가: 요청 번호를 안전하게 증가시키기 위해
 count_lock = threading.Lock()
-
 def handle_client(client_socket, client_addr):
     global IMAGE_FILTER_MODE, REQUEST_COUNT
     
@@ -161,7 +161,7 @@ def handle_client(client_socket, client_addr):
                             elif line.lower().startswith("content-length:"):
                                 content_length = line.split(":", 1)[1].strip()
                         
-                        # [SRV -> PRX] 로그 (무조건 출력)
+                        # [SRV -> PRX] 로그
                         print_queue(f"[CLI --- PRX <== SRV]")
                         print_queue(f" > {status_line}")
                         print_queue(f" > {content_type} {content_length}bytes")
