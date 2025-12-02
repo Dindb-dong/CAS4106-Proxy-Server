@@ -31,7 +31,7 @@
 
 # 2. Program Flow Chart
 
-![flowchart.png](attachment:79d0c9c0-9883-4d2a-a985-2fcc4403f6e0:flowchart.png)
+![flowchart.png](./images/flowchart.png)
 
 ### Block 1: Connection & Concurrency Handling (Steps 1~3)
 
@@ -177,9 +177,9 @@ while True:
 
 ### 4.1. Dynamic Image Filtering (with Query String)
 
-![스크린샷 2025-12-02 오후 10.35.49.png](attachment:f133a2af-ba7f-4f6e-a834-ff9acb425496:%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-12-02_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.35.49.png)
+![snapshot_4.1.1.png](./images/snapshot_4.1.1.png)
 
-![스크린샷 2025-12-02 오후 10.36.02.png](attachment:95dd2ba5-a31c-4f46-8c31-41a0a0ee72ec:%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-12-02_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.36.02.png)
+![snapshot_4.1.2.png](./images/snapshot_4.1.2.png)
 
 - **Experiment:**
   - 클라이언트가 `http://mnet.yonsei.ac.kr/hw/sample3.html?image_off`를 요청했습니다.
@@ -193,7 +193,7 @@ while True:
 
 ### 4.2. Disabling Image Filtering (Reverting to Normal Mode)
 
-![스크린샷 2025-12-02 오후 10.37.15.png](attachment:16b8273b-1f43-4dc7-ac69-0bd6d9091e7e:%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-12-02_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.37.15.png)
+![snapshot_4.2.1.png](./images/snapshot_4.2.1.png)
 
 - **Experiment:**
   - 클라이언트가 이미지 필터링을 해제하기 위해 `http://mnet.yonsei.ac.kr/hw/sample3.html?image_on`을 요청했습니다.
@@ -204,7 +204,7 @@ while True:
 
 ### 4.3. Domain Redirection (Google to [M.NET](http://M.NET))
 
-![스크린샷 2025-12-02 오후 10.42.18.png](attachment:055e0167-b32e-48d9-9069-0c1fba6f9222:%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-12-02_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.42.18.png)
+![snapshot_4.3.1.png](./images/snapshot_4.3.1.png)
 
 - **Experiment:**
   - 클라이언트가 `http://google.com/` 접속을 시도했습니다.
@@ -216,9 +216,9 @@ while True:
 
 ### 4.4. Multi-threading & Concurrency
 
-![스크린샷 2025-12-02 오후 10.37.25.png](attachment:a73deafc-8f33-4004-89ef-2c1e249752cf:%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-12-02_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.37.25.png)
+![snapshot_4.4.1.png](./images/snapshot_4.4.1.png)
 
-![스크린샷 2025-12-02 오후 10.37.36.png](attachment:e181c585-17d3-4906-82bb-8e08fc744a34:%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-12-02_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_10.37.36.png)
+![snapshot_4.4.2.png](./images/snapshot_4.4.2.png)
 
 - **Experiment:**
   - 웹 페이지 로딩 시 HTML과 여러 개의 이미지 리소스 요청이 거의 동시에 발생했습니다.
